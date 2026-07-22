@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-CZcjcDnw.js";var t=e(),n=({error:e})=>(0,t.jsxs)(`div`,{className:`mx-auto max-w-2xl px-4 py-16 text-center`,children:[(0,t.jsx)(`h1`,{className:`text-2xl font-bold`,children:`เกิดข้อผิดพลาด`}),(0,t.jsx)(`p`,{className:`mt-2 text-sm text-muted-foreground`,children:e.message})]});export{n as errorComponent};
