@@ -40,6 +40,10 @@ setTimeout(async () => {
     fs.writeFileSync(path.join(outDir, "404.html"), html);
     console.log("Successfully saved 404.html to .output/public/404.html");
 
+    // Create .nojekyll to prevent GitHub Pages from ignoring folders starting with underscore
+    fs.writeFileSync(path.join(outDir, ".nojekyll"), "");
+    console.log("Successfully created .nojekyll in .output/public");
+
   } catch (err) {
     console.error("Failed to generate static html files:", err);
     process.exit(1);
